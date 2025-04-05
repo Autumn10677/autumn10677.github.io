@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">About Me</a></li>
+                <li><a href="./index.html#cv">CV</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pad-for-header">
+        <section id="blender-braille">
+            <h2 class="section-title italic-text"><a href="https://github.com/Autumn10677/ASDtools" target="_blank">ASDtools</a></h2>
+            <hr class="section-title-line"/>
+            <p>
+                Have you ever wanted to load data from NIST's Atomic Spectra Database (ASD) into Python? Are there specific atomic and molecular 
+                processes you want to understand better? Do you want to check the information listed on standardized databases? ASDtools is a Python 
+                package that aims to help users with all these tasks! The primary functionality of ASDtools comes from its ability to format and clean 
+                data produced by astroquery.nist. The default output of astroquery contains a handful of non-numeric characters that describe individual 
+                lines in the NIST ASD. ASDtools can identify these flags and automatically relocate them to a separate column in the resulting DataFrame. 
+                This allows users to keep track of flags without manually formatting every queried DataFrame. In addition to ASDtools' data cleaning 
+                capabilities, it also has a handful of tools aimed at helping users understand formatting choices/conventions in the NIST ASD. For example, 
+                it can (1) generate the ground-state electronic configuration for all elements, (2) produce Aufbau diagrams up to a specified level, 
+                (3) calculate all possible term symbols given an electronic configuration, and (4) create a Grotrian diagram for a given element.
+            </p>
+            <a href="https://github.com/Autumn10677/BlenderBraille" target="_blank"><img src="./visual_assets/H_I_grotrian_diagram.png" class="framed-image"/></a>
+        </section>
+        <section id="blender-braille">
+            <h2 class="section-title italic-text"><a href="https://github.com/Autumn10677/BlenderBraille" target="_blank">BlenderBraille</a></h2>
+            <hr class="section-title-line"/>
+            <p>
+                Although many people are considered blind or low vision (BLV), creating accurate Braille signage can be costly. This issue often leads 
+                to poor maintenance of Braille signage as it gradually breaks or wears down. Some individuals have tried to address this problem by 3D 
+                printing their own Braille signage, but often without considering Braille's proper grammatical structure or sizing. So, I developed a 
+                Blender add-on that automates accurate and size-compliant Braille generation. I also created an automated tool for generating tactile 
+                models to assist with my STEM outreach!
+            </p>
+            <a href="https://github.com/Autumn10677/BlenderBraille" target="_blank"><img src="./visual_assets/braille_example.png" class="framed-image"/></a>
+        </section>
+
+        <section id="fourier-transform-demo">
+            <h2 class="section-title italic-text"><a href="https://github.com/Autumn10677/Fourier-Transform-Demo" target="_blank">Fourier Transform Demo</a></h2>
+            <hr class="section-title-line"/>
+            <p>
+                Most modern technologies use Fast Fourier Transforms (FFTs) in some way. Streaming platforms (i.e., Spotify, YouTube, etc.) use it to compress 
+                media files, scientists use it to identify periodic signals in data (i.e., time-series radio astronomy), and even musicians use it to master their 
+                recordings (i.e., hissing, balancing, etc.). I wanted to learn more about FFTs and their applications, so I made a Jupyter notebook that provides 
+                visual and auditory examples of their work. Below is one example where I decomposed a song into its frequency-space components and slowly added 
+                in each frequency until the <b><a href="https://pmmusic.pro/downloads/" target="_blank">original song</a></b> was recreated. See if you can guess 
+                the song before it finishes!
+            </p>
+            <figure class="audio-container">
+                <figcaption><p><i><b>WARNING:</b> This audio can be a little loud on some devices.</i></p></figcaption><br>
+                <audio class="audio" controls src="visual_assets/fourier_recreation_of_song.wav"></audio>
+            </figure>
+        </section>
+        <section id="nbody-simulation">
+            <h2 class="section-title italic-text"><a href="https://github.com/Autumn10677/N-Body_Simulation" target="_blank">N-Body Simulation</a></h2>
+            <hr class="section-title-line"/>
+            <div class="text-with-images">
+                <div>
+                    <p>When I started learning Python, a friend and I would work on themed projects to practice our coding skills. One of these themes was just "space," 
+                        so I tried to create my orbital simulation from scratch! My methodology was sketchy, and the code was horribly unoptimized. But this is one of the 
+                        first coding projects I ever tackled, and it is still fun to mess around with. This code is also capable of querying the NASA Exoplanet Archive and 
+                        simulating a user-specified extrasolar system!</p>
+                </div>
+                <div>
+                    <a href="https://github.com/Autumn10677/N-Body_Simulation" target="_blank"><img src="./visual_assets/nbody_simulation_animation.gif" class="framed-image"/></a>
+                </div>
+            </div>
+        </section>
+        <section id="slightly-professional">
+            <h2 class="section-title italic-text"><a href="https://www.youtube.com/@SlightlyProfessional-bt6bi/videos" target="_blank">Slightly Professional</a></h2>
+            <hr class="section-title-line"/>
+            <p>In undergrad, a friend of mine (Alex Giovannone) and I decided to try making YouTube videos to discuss topics we find difficult and interesting. We jointly run the channel and will infrequently upload videos, although grad school has made this harder to do consistently. We both animate the videos ourselves, and spend weeks to several months writing scripts! These videos are far from perfect, but it is a fun way to combine my interests in animation, music composition, and script writing. Below is my most recent video on the channel!</p>
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/TDz1zIwT9sE?si=Gh_CwNP8CK3dNIdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p></p>
+            <p><a href="mailto:autumn.stephens@colorado.edu">autumn.stephens@colorado.edu</a></p><br>
+            <p>2000 Colorado Ave, Boulder, CO 80309</p><br><br>
+            <p>© 2025 Autumn Stephens. All Rights Reserved.</p>
+        </address>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,324 @@
+:root {
+  --light-color: #f5f6f7;
+  --mid-color: #0F0F12;
+  --dark-color: black;
+
+  --title-size: min(10vw, 10rem);
+  --subtitle-size: min(5vw, 5rem);
+  --section-header-size: 4rem;
+  --paragraph-size: 2.0rem;
+
+  --name-underline-width: min(50vw, 50rem);
+
+  --section-width: min(80rem, 80%);
+  --footer-height: 180px;
+
+  --name-position: 50vh;
+  --name-underline-position: 57vh;
+  --subtitle-position: 60vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--light-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-size: 62.5%;
+  background-color: #0F0F12;
+}
+
+header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  justify-content: right;
+  align-items: center;
+  z-index: 998;
+  top:0;
+  background: linear-gradient( 
+    black 95%,
+    white)
+}
+
+.pad-for-header {
+  padding-top: 70px;
+}
+
+.top-img {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+img.parallax {
+  display:block;
+  width:100%; 
+  height:100%;
+  object-fit: cover;
+  opacity: 0.3;
+
+  background-image: url("https://cdn.mos.cms.futurecdn.net/AoWXgnHSxAAPxqymPQMQYL-1200-80.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-with-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.framed-image {
+  margin: 3rem 0 0 0;
+  width: 100%;
+  height: 90%;
+  display: block;
+  object-fit: cover;
+  border: dotted white 3px;
+}
+
+.name-title {
+  position: absolute;
+  text-align: center;
+  width: 80vw;
+  color: var(--light-color);
+  font-size: var(--title-size);
+  z-index: 1;
+  top: var(--name-position);
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.name-subtitle {
+  position: absolute;
+  text-align: center;
+  width: 80vw;
+  color: var(--light-color);
+  font-size: var(--subtitle-size);
+  font-style: italic;
+  z-index: 1;
+  top: var(--subtitle-position);
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+nav {
+  width: 50rem;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: var(--light-color);
+  margin: 0 0.2rem;
+  padding: 0.8rem;
+  display: block;
+  border-radius: 5%;
+  font-size: 2.1rem;
+}
+
+a {
+  color: inherit;
+}
+
+nav > ul > li:hover {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+#left-header-text {
+  color: var(--light-color);
+  margin: 0 0 0 10px;
+  font-size: 2rem;
+}
+
+section {
+  max-width: var(--section-width);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: var(--section-header-size);
+  padding-top: 50px;
+}
+
+.section-body {
+  margin: 10px 0 0 0;
+}
+
+p {
+  font-size: var(--paragraph-size);
+  font-style: normal;
+}
+
+hr {
+  color: var(--light-color);
+  font-size: var(--title-size);
+  z-index: 1;
+}
+
+hr.anim-line {
+  width: var(--name-underline-width);
+  position: absolute;
+  align-content: center;
+  top: var(--name-underline-position);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: initial-draw;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+hr.section-title-line {
+  width: 100%;
+  margin: 0.2rem 0 2rem 0;
+}
+
+footer {
+  width: 100vw;
+  height: var(--footer-height);
+  top: -var(--footer-height);
+  padding: 50px 0;
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: linear-gradient( 
+    white,
+    black 2%);
+}
+
+address {
+  position: relative;
+  padding: 100px 0;
+  text-align: center;
+}
+
+table {
+
+  border-collapse: collapse;
+}
+
+table, th, td {
+  width: 100rem;
+  margin: 20px auto 0 auto;
+  border: 1px solid white;
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+
+.audio-container {
+  padding: 30px 0 0 0;
+  width: 100%;
+}
+
+.audio {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid white;
+}
+
+.video-container {
+  padding: 30px 0 0 0;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 3px dotted white;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.styled-link {
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes initial-draw {
+  0% {opacity: 0; width: 0;}
+  100% {opacity: 1; width: var(--name-underline-width);}
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@media (max-width: 500px) and (width < height) {
+  :root {
+    --name-position: 50vh;
+    --name-underline-position: 53vh;
+    --subtitle-position: 55vh;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  :root {
+    --name-position: 50vh;
+    --name-underline-position: 62vh;
+    --subtitle-position: 70vh;
+  }
+}
+
+@media (max-width: 1000px) and (orientation: portrait) {
+  :root {
+    --name-position: 50vh;
+    --name-underline-position: 53vh;
+    --subtitle-position: 55vh;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .text-with-images {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+
+  .framed-image {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: dotted white 3px;
+  }
+}
