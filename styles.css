@@ -11,7 +11,7 @@
   --name-underline-width: min(50vw, 50rem);
 
   --section-width: min(80rem, 80%);
-  --footer-height: 180px;
+  --footer-height: 100px;
 
   --name-position: 50vh;
   --name-underline-position: 57vh;
@@ -169,11 +169,13 @@ section {
 
 .section-body {
   margin: 10px 0 0 0;
+  text-align: justify;
 }
 
 p {
   font-size: var(--paragraph-size);
   font-style: normal;
+  text-align: justify;
 }
 
 hr {
@@ -201,7 +203,6 @@ hr.section-title-line {
 
 footer {
   width: 100vw;
-  height: var(--footer-height);
   top: -var(--footer-height);
   padding: 50px 0;
   margin: 50px 0 0 0;
@@ -214,9 +215,12 @@ footer {
     black 2%);
 }
 
+footer p {
+  text-align: center;
+}
+
 address {
   position: relative;
-  padding: 100px 0;
   text-align: center;
 }
 
