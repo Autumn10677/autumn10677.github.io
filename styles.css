@@ -324,3 +324,74 @@ table, th, td {
     border: dotted white 3px;
   }
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center everything */
+}
+canvas {
+  border: 2px solid black;
+  image-rendering: pixelated;
+  display: block;
+  margin-bottom: 1em;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+.axis-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+.axis-label {
+  position: absolute;
+  white-space: nowrap; /* keep text in one line */
+  font-size: 17px;
+  color: white;
+}
+
+.all-controls {
+  padding-top: 100px;
+  border-radius: 5px;
+}
+
+.control-group {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px rgba(255, 255, 255, 0.4);
+}
+
+.control-group label {
+  color: black;
+  font-size: 1.8em;
+}
+
+.control-group span {
+  color: black;
+  font-size: 1.8em;
+}
+
+.plot-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.plot-area {
+  position: relative;
+  display: inline-block;
+}
+
+/* Give spacing below the plot */
+#all-controls {
+  margin-top: 80px; /* <-- distance in pixels */
+}
+
+.simulation-title {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
